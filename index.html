@@ -26,9 +26,27 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-brand">
+      <div class="leftSidebar">
+        <ul>
+          <li><a href="#">Anasayfa</a></li>
+          <li><a href="#">Hakkımızda</a></li>
+          <li><a href="#">Hizmetler</a></li>
+          <li><a href="#">İletişim</a></li>
+        </ul>
+        <div class="close-sidebar" id="close-LeftSidebar">
+          <i class="bi bi-x-circle text-danger"></i>
+        </div>
+      </div>
+      <div class="içerik">
+        <button id="toggleLeftSidebar"><i class="bi bi-list"></i></button>
+      </div>
+      <div class="header-brand-mobil">
         <a href=""> <img src="assets/images/header-logo-blue.svg" alt="" /></a>
       </div>
+      <a href="" class="search-mobil">
+        <img src="assets/images/icons/icons8-search-25.png" alt="" />
+      </a>
+      <a href="" class="a-button-mobil">Get a Free Quate</a>
       <div class="header-nav">
         <ul>
           <li>
@@ -322,7 +340,7 @@
             </div>
           </div>
         </div>
-        <div class="accordion border-0" id="accordionExample2">
+        <div class="accordion border-0" id="accordionExample3">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button
@@ -337,7 +355,7 @@
             <div
               id="collapseThree"
               class="accordion-collapse show collapse"
-              data-bs-parent="#accordionExample2"
+              data-bs-parent="#accordionExample3"
             >
               <div class="accordion-body">
                 <ul class="filtered-ul">
@@ -433,12 +451,36 @@
             </tbody>
           </table>
         </div>
-        <h3>LASIK Eye Surgery Clinics(40 Clinics)</h3>
+        <h3 id="main-baslik">LASIK Eye Surgery Clinics(40 Clinics)</h3>
         <div class="sorted-content">
           <span>sorted by </span>
-          <select name="" id="">
-            <option value="">Best Mach</option>
-          </select>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Best Match
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+         <div class="rightContent"> <button class="filter-button-menu">FiLTER</button></div>
+         <!-- ##########rightsidebar-->
+         <div class="rightsidebar">
+          <ul>
+              <li><a href="#">Anasayfa</a></li>
+              <li><a href="#">Hakkımızda</a></li>
+              <li><a href="#">Hizmetler</a></li>
+              <li><a href="#">İletişim</a></li>
+          </ul>
+        </div>
+        <div id="close-right-sidebar"><i class="bi bi-x-circle text-danger display-3"></i></div>
+         <!-- ##########rightsidebar end-->
         </div>
         <div class="main-content">
           <div class="media">
@@ -687,80 +729,93 @@
       <div class="comments">
         <button class="prev-btn">←</button>
 
-    
         <button class="next-btn">→</button>
         <div class="slider">
-      
           <div class="slide">
             <!-- Sol ok butonu -->
-           
+
             <div class="testimonial">
-              <img src="https://sc.flymedi.com/Web/images/star/star-yellow.svg" alt=""> <img src="assets/images/icons/icons8-approved-25.png" alt=""> verified
+              <img
+                src="https://sc.flymedi.com/Web/images/star/star-yellow.svg"
+                alt=""
+              />
+              <img src="assets/images/icons/icons8-approved-25.png" alt="" />
+              verified
               <h3>Very Professional</h3>
-              <p>Very professional
-                Kind
-                Have a great attitude</p>
-                <span>irina luisa,19 Hours </span>
+              <p>Very professional Kind Have a great attitude</p>
+              <strong>irina luisa,19 Hours </strong>
             </div>
           </div>
           <div class="slide">
             <!-- Sol ok butonu -->
-           
+
             <div class="testimonial">
-              <img src="https://sc.flymedi.com/Web/images/star/star-yellow.svg" alt=""> <img src="assets/images/icons/icons8-approved-25.png" alt=""> verified
+              <img
+                src="https://sc.flymedi.com/Web/images/star/star-yellow.svg"
+                alt=""
+              />
+              <img src="assets/images/icons/icons8-approved-25.png" alt="" />
+              verified
               <h3>Very Professional</h3>
-              <p>Very professional
-                Kind
-                Have a great attitude</p>
-                <span>irina luisa,19 Hours </span>
+              <p>Very professional Kind Have a great attitude</p>
+              <strong>irina luisa,19 Hours </strong>
             </div>
           </div>
           <div class="slide">
             <!-- Sol ok butonu -->
-           
+
             <div class="testimonial">
-              <img src="https://sc.flymedi.com/Web/images/star/star-yellow.svg" alt=""> <img src="assets/images/icons/icons8-approved-25.png" alt=""> verified
+              <img
+                src="https://sc.flymedi.com/Web/images/star/star-yellow.svg"
+                alt=""
+              />
+              <img src="assets/images/icons/icons8-approved-25.png" alt="" />
+              verified
               <h3>Very Professional</h3>
-              <p>Very professional
-                Kind
-                Have a great attitude</p>
-                <span>irina luisa,19 Hours </span>
+              <p>Very professional Kind Have a great attitude</p>
+              <strong>irina luisa,19 Hours </strong>
             </div>
           </div>
           <div class="slide">
             <!-- Sol ok butonu -->
-           
+
             <div class="testimonial">
-              <img src="https://sc.flymedi.com/Web/images/star/star-yellow.svg" alt=""> <img src="assets/images/icons/icons8-approved-25.png" alt=""> verified
+              <img
+                src="https://sc.flymedi.com/Web/images/star/star-yellow.svg"
+                alt=""
+              />
+              <img src="assets/images/icons/icons8-approved-25.png" alt="" />
+              verified
               <h3>Very Professional</h3>
-              <p>Very professional
-                Kind
-                Have a great attitude</p>
-                <span>irina luisa,19 Hours </span>
+              <p>Very professional Kind Have a great attitude</p>
+              <strong>irina luisa,19 Hours </strong>
             </div>
           </div>
           <div class="slide">
             <!-- Sol ok butonu -->
-           
+
             <div class="testimonial">
-              <img src="https://sc.flymedi.com/Web/images/star/star-yellow.svg" alt=""> <img src="assets/images/icons/icons8-approved-25.png" alt=""> verified
+              <img
+                src="https://sc.flymedi.com/Web/images/star/star-yellow.svg"
+                alt=""
+              />
+              <img src="assets/images/icons/icons8-approved-25.png" alt="" />
+              verified
               <h3>Very Professional</h3>
-              <p>Very professional
-                Kind
-                Have a great attitude</p>
-                <span>irina luisa,19 Hours </span>
+              <p>Very professional Kind Have a great attitude</p>
+              <span>irina luisa,19 Hours </span>
             </div>
           </div>
           <div class="slide">
             <!-- Sol ok butonu -->
-           
+
             <div class="testimonial">
               <p>Yorum 1</p>
             </div>
           </div>
           <div class="slide">
             <!-- Sol ok butonu -->
-           
+
             <div class="testimonial">
               <p>Yorum 1</p>
             </div>
@@ -774,8 +829,373 @@
         </div>
       </div>
     </section>
+    <section id="comments2">
+      <p>
+        <strong
+          >How Long Should You Stay In The Hospital After The Surgery?</strong
+        ><br />
+        LASIK eye surgery is an outpatient procedure, you can leave the clinic
+        immediately after the surgery.
+      </p>
 
-    
+      <p>
+        <strong>How Long Does The Treatment Take?</strong><br />
+        15 minutes per eye.
+      </p>
+
+      <p>
+        <strong>What To Avoid Before The Procedure?</strong><br />
+        Before you leave for LASIK eye surgery, it’s a good idea to inform your
+        eye doctor about your travel and the procedure you plan on having. Your
+        ophthalmologist may also give you a quick check-up before you leave and
+        also offer some advice.
+      </p>
+
+      <p>
+        It’s recommended that you stop wearing contact lenses and makeup for at
+        least a few days before going in for LASIK. Contact lenses may damage
+        the cornea and makeup may interfere with the LASIK procedure.
+      </p>
+
+      <p><strong>LASIK Surgery Complications</strong></p>
+      <p>
+        Although rare, LASIK surgery complications can appear. Patients that
+        decide to have LASIK laser eye surgery must be careful and follow the
+        doctor’s recommendation thoroughly in order to avoid the potential:
+      </p>
+
+      <ul>
+        <li>
+          Eye infection – during the recovery period it’s recommended not to
+          swim in the sea or ocean. If you do get an eye infection, it can be
+          easily treated with antibiotics.
+        </li>
+        <li>
+          Corneal membrane wrinkles – if you rub your eyes, squeeze or practice
+          contact sports you may end up with a wrinkled corneal membrane which
+          in turn leads to decreased vision.
+        </li>
+        <li>
+          Ectasia – usually appears in 1 in 15,000 patients after LASIK surgery.
+        </li>
+      </ul>
+
+      <p><strong>LASIK Treatment Success Rate</strong></p>
+      <p>
+        LASIK is one of the most common laser eye surgeries used to correct
+        refractive errors. Post-operatory LASIK patient reviews set the success
+        rates between 92% and 98%. This is the reason why LASIK gained so much
+        popularity in recent years.
+      </p>
+
+      <p>
+        It’s very important to mention that there are no known long-term side
+        effects from LASIK surgery. It’s also worth mentioning the fact that
+        LASIK does not guarantee perfect vision, although many patients do
+        obtain it after a few weeks from surgery.
+      </p>
+
+      <p><strong>LASIK Eye Surgery Alternatives</strong></p>
+      <p>
+        While LASIK offers great results for a large number of patients, it also
+        comes with certain requirements. Patients who are unable to undergo
+        LASIK surgery have some alternatives available to them. Here are the
+        best LASIK alternatives available for patients.
+      </p>
+
+      <p><strong>Wavefront Guided LASIK</strong></p>
+      <p>
+        Wavefront-guided LASIK uses computer imaging technology to create a 3D
+        model of the patient’s cornea. This map is then used to program the
+        excimer laser with more accuracy since wavefront technology provides
+        highly precise measurements of the patient’s cornea.
+      </p>
+
+      <p>
+        This is the main reason why Wavefront-guided LASIK provides patients
+        with better results than glasses or traditional LASIK. Not only that but
+        this new technology has been proven to reduce post-op side effects such
+        as contrast sensitivity and problems with night vision.
+      </p>
+
+      <p>
+        A higher percentage of patients achieve the near-perfect vision by
+        undergoing Wavefront-guided LASIK instead of the traditional procedure.
+      </p>
+
+      <p><strong>LASEK</strong></p>
+      <p>
+        LASEK eye surgery uses a micro-instrument called a trephine to modify
+        the epithelial corneal tissue, creating a flap. The alcohol solution is
+        then applied to the area in order to further loosen the epithelial
+        cells.
+      </p>
+
+      <p>
+        The flap is then moved aside and the rest of the procedure is comparable
+        to PRK eye surgery – the cornea is sculpted, and the flap is
+        repositioned before being secured in place with the help of a contact
+        lens that will help with the healing process.
+      </p>
+
+      <p><strong>EpiLASIK</strong></p>
+      <p>
+        EpiLASIK uses a very small micro-keratome called an EpiKeratome to
+        detach a small sheet of epithelial tissue from the cornea itself. The
+        sheet is then moved to the side and the procedure continues as with PRK
+        treatment. This thin sheet will be moved back into its place, under a
+        contact lens that will help the healing process.
+      </p>
+
+      <p><strong>CK or Conductive Keratoplasty</strong></p>
+      <p>
+        Conductive Keratoplasty is a minimally invasive thermal refractive
+        procedure that’s usually performed on patients over 40 years old. This
+        procedure is used to treat mild or moderate cases of hyperopia.
+      </p>
+
+      <p>
+        Conductive Keratoplasty does not use a laser at all, but instead, the
+        doctor will use a micro-probe that releases radio frequency energy,
+        applying heat to certain portions of the cornea. The extra heat will
+        cause the cornea to shrink and tighten, increasing its curvature and
+        improving eyesight.
+      </p>
+
+      <p>
+        Conductive Keratoplasty can also be used to treat presbyopia in patients
+        with fair vision but poor near focus. CK is unfortunately not a
+        permanent solution and some patients may require further procedures.
+      </p>
+
+      <p><strong>Phakic Intraocular Lenses or IOLs</strong></p>
+      <p>
+        Phakic intraocular lenses are best suited for patients suffering from
+        severe refractive errors that cannot be treated with surgery. Phakic
+        intraocular lenses are also called implantable contact lenses – these
+        are placed in front of the eye’s natural lens, either in front or behind
+        the iris. Once the lenses are inserted, the patient’s vision is
+        corrected.
+      </p>
+
+      <p><strong>Refractive Lens Exchange or Clear Lens Extraction</strong></p>
+      <p>
+        Refractive Lens Exchange uses an artificial lens to replace the
+        patient’s natural eye lens in order to improve their vision. This
+        procedure is very similar to cataract surgery, with the addition of an
+        artificial lens.
+      </p>
+    </section>
+    <footer class="footer">
+      <div class="menufooter">
+        <div class="item">
+          <div class="footer-head-six">Flymedi</div>
+          <ul>
+            <li><a href="/about-us">About Us</a></li>
+            <li><a href="/how-it-works">How It Works</a></li>
+            <li><a href="/pre-op-guide">Pre-Op Guide</a></li>
+            <li><a href="/authors">Authors &amp; Reviewers</a></li>
+            <li><a href="/referral-program">Flymedi Referral Program</a></li>
+
+            <li><a href="/careers">Careers</a></li>
+            <li><a href="/faq">FAQ</a></li>
+            <li><a href="/blog">Blog</a></li>
+
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/terms-and-conditions">Terms and Conditions</a></li>
+            <li><a href="/contact-us">Contact Us</a></li>
+            <li><a href="/add-your-clinic">Add Your Clinic</a></li>
+          </ul>
+
+          <div class="socials">
+            <a
+              href="https://www.facebook.com/flymedi"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
+              <i class="bi-facebook"></i>
+            </a>
+            <a
+              href="https://twitter.com/Fly_Medi"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
+              <i class="bi-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/flymedi_com"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
+              <i class="bi-instagram"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UC0coTHv8nFYGhY2JgN_0dUg"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
+              <i class="bi-youtube"></i>
+            </a>
+            <div style="width: 60%">
+              <!-- TrustBox widget - Mini -->
+              <div
+                class="trustpilot-widget"
+                data-locale="en-GB"
+                data-template-id="53aa8807dec7e10d38f59f32"
+                data-businessunit-id="582090430000ff0005972c3c"
+                data-style-height="150px"
+                data-style-width="100%"
+                data-theme="light"
+                style="position: relative"
+              >
+                <iframe
+                  title="Customer reviews powered by Trustpilot"
+                  loading="auto"
+                  src="https://widget.trustpilot.com/trustboxes/53aa8807dec7e10d38f59f32/index.html?templateId=53aa8807dec7e10d38f59f32&amp;businessunitId=582090430000ff0005972c3c#locale=en-GB&amp;styleHeight=150px&amp;styleWidth=100%25&amp;theme=light"
+                  style="
+                    position: relative;
+                    height: 150px;
+                    width: 100%;
+                    border-style: none;
+                    display: block;
+                    overflow: hidden;
+                  "
+                ></iframe>
+              </div>
+              <!-- End TrustBox widget -->
+            </div>
+          </div>
+        </div>
+
+        <div class="item">
+          <div class="footer-head-six">Popular Treatments</div>
+          <ul>
+            <li><a href="/hair-transplant">Hair Transplant</a></li>
+            <li><a href="/plastic-surgery">Plastic Surgery</a></li>
+            <li><a href="/bariatric-surgery">Bariatric Surgery</a></li>
+            <li><a href="/dentistry">Dentistry</a></li>
+            <li><a href="/eye-care">Eye Care</a></li>
+            <li><a href="/general-surgery">General Surgery</a></li>
+
+            <li><a href="/oncology">Oncology</a></li>
+            <li><a href="/orthopedics">Orthopedics</a></li>
+            <li><a href="/spinal-surgery">Spinal Surgery</a></li>
+          </ul>
+        </div>
+        <div class="item full">
+          <div class="footer-head-six">Popular Procedures</div>
+          <div class="row">
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <ul>
+                <li>
+                  <a href="/hair-transplant/fue-hair-transplant"
+                    >FUE Hair Transplant</a
+                  >
+                </li>
+                <li>
+                  <a href="/plastic-surgery/breast-implants">Breast Implants</a>
+                </li>
+                <li>
+                  <a href="/bariatric-surgery/gastric-sleeve">Gastric Sleeve</a>
+                </li>
+                <li>
+                  <a href="/bariatric-surgery/gastric-bypass-surgery"
+                    >Gastric Bypass Surgery</a
+                  >
+                </li>
+                <li>
+                  <a href="/plastic-surgery/butt-implants">Butt Implants</a>
+                </li>
+                <li>
+                  <a href="/plastic-surgery/breast-implants">Breast Implants</a>
+                </li>
+                <li>
+                  <a href="/hair-transplant/beard-transplant"
+                    >Beard Transplant</a
+                  >
+                </li>
+                <li><a href="/plastic-surgery/ear-surgery">Otoplasty</a></li>
+                <li><a href="/plastic-surgery/tummy-tuck">Tummy Tuck</a></li>
+                <li><a href="/plastic-surgery/rhinoplasty">Rhinoplasty</a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <ul>
+                <li><a href="/plastic-surgery/liposuction">Liposuction</a></li>
+                <li>
+                  <a href="/eye-care/lasik-eye-surgery">LASIK Eye Surgery</a>
+                </li>
+                <li><a href="/dentistry/veneers">Veneers</a></li>
+                <li>
+                  <a href="/dentistry/dental-implants">Dental Implants</a>
+                </li>
+                <li><a href="/dentistry/crowns">Crowns</a></li>
+                <li>
+                  <a href="/eye-care/cataract-surgery">Cataract Surgery</a>
+                </li>
+
+                <li>
+                  <a href="/plastic-surgery/brazilian-butt-lift"
+                    >Brazilian Butt Lift</a
+                  >
+                </li>
+                <li><a href="/plastic-surgery/facelift">Facelift</a></li>
+                <li><a href="/plastic-surgery/breast-lift">Breast Lift</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="footer-head-six">Destinations</div>
+          <ul>
+            <li><a href="/turkey">Turkey</a></li>
+            <li><a href="/turkey/istanbul">Istanbul</a></li>
+            <li><a href="/turkey/antalya">Antalya</a></li>
+            <li><a href="/cyprus">Cyprus</a></li>
+            <li><a href="/romania">Romania</a></li>
+            <li><a href="/poland">Poland</a></li>
+            <li><a href="/spain">Spain</a></li>
+            <li><a href="/germany">Germany</a></li>
+            <li><a href="/hungary">Hungary</a></li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="footer-head-six">Treatment Guides</div>
+          <ul>
+            <li>
+              <a href="/fue-hair-transplant/375">FUE Hair Transplant Guide</a>
+            </li>
+            <li><a href="/breast-implants/19">Breast Implant Guide</a></li>
+            <li><a href="/gastric-sleeve/292">Gastric Sleeve Guide</a></li>
+            <li>
+              <a href="/gastric-bypass-surgery/254"
+                >Gastric Bypass Surgery Guide</a
+              >
+            </li>
+            <li><a href="/butt-implants/95">Butt Implants Guide</a></li>
+            <li><a href="/breast-implants/19">Breast Implants Guide</a></li>
+            <li><a href="/beard-transplant/36">Beard Transplant Guide</a></li>
+            <li><a href="/ear-surgery/30">Otoplasty Guide</a></li>
+            <li><a href="/tummy-tuck/27">Tummy Tuck Guide</a></li>
+            <li><a href="/rhinoplasty/34">Rhinoplasty Guide</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <div class="footer-bottom">
+        <p>
+          Copyright 2015 - 2023 © FlyMedi |
+          <a href="/terms-and-conditions" style="color: white"
+            >Terms and Conditions</a
+          >
+          | <a href="/privacy-policy" style="color: white">Privacy Policy</a
+          ><br />
+          By using this website you agree to the Flymedi Terms and Conditions
+          and Privacy Policy.
+        </p>
+        <img src="assets/images/header-logo-blue.svg" alt="" />
+      </div>
+    </footer>
 
     <script src="./assets/css/js/index.js"></script>
     <script

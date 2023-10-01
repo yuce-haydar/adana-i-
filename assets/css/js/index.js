@@ -65,3 +65,33 @@ document.querySelector('.select-currency').addEventListener('click', function (e
   
     showSlides();
   });
+
+  const toggleButton = document.getElementById('toggleLeftSidebar');
+const sidebar = document.querySelector('.leftSidebar');
+
+toggleButton.addEventListener('click', () => {
+ 
+    sidebar.classList.toggle('active');
+});
+
+const closesidebar=document.getElementById('close-LeftSidebar');
+closesidebar.addEventListener('click',()=>{
+  sidebar.classList.remove('active');
+});
+
+const filterbuttonmobil = document.querySelector('.filter-button-menu');
+const rightsidebar = document.querySelector('.rightsidebar');
+ const content = document.querySelector('.rightContent');
+ const closebutton = document.querySelector('#close-right-sidebar ');
+
+filterbuttonmobil.addEventListener('click', () => {
+    rightsidebar.classList.toggle('active');
+    content.classList.toggle('active');
+    closebutton.style.display = 'block';
+});
+
+closebutton.addEventListener('click', () => {
+    rightsidebar.classList.remove('active');
+    content.classList.remove('active');
+    closebutton.style.display = 'none';
+});

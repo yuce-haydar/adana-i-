@@ -36,6 +36,316 @@ body {
   line-height: 1.5;
 }
 
+
+
+@media screen and (max-width: 991px) {
+  .header-nav{
+    display: none;
+  }
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+  }
+  .header-brand-mobil img{
+    width: 150px;
+    
+  }
+  .a-button-mobil{
+    width: auto;
+    padding: 5px;
+    height: 20px;
+    font-size: 10px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    text-decoration: none;
+  
+  }
+  .leftSidebar {
+    width: 0;
+    height: 100%;
+    background-color: #fff;
+    color: #3e3e3e;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .LeftSidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .leftSidebar ul li {
+    padding: 10px;
+  }
+  
+  .leftSidebar a {
+    text-decoration: none;
+    color: #3e3e3e;
+  }
+  
+  .içerik {
+   
+   
+    transition: margin-left 0.3s ease-in-out;
+  }
+  
+  #toggleLeftSidebar {
+  
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  
+  
+    top: 20px;
+    left: 20px;
+  }
+  
+  .leftSidebar.active {
+    width: 90%;
+  }
+  
+  .content.active {
+    margin-left: 90%;
+  }
+  .close-sidebar{
+    position: relative;
+    top:-180px;
+    left: 300px;
+  }
+  
+  .banner {
+    width: 100%;
+    height: 205px;
+    background-color: #1274b4;
+    padding-left: 20px;
+   
+  }
+  .banner-nav {
+  }
+  .banner-nav a {
+    font-size: 10px;
+    color: var(--text-color-light);
+    text-decoration: none;
+  }
+  .banner-content {
+    color: #fff;
+   
+    line-height: 30px;
+  }
+  .banner-content h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .banner-ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+  }
+  .banner-li {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 10px;
+  }
+  .banner-li img {
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  .banner-content span {
+    vertical-align: middle;
+    color: #f4f4f4;
+  }
+  
+  
+  .companyList {
+    flex: 4;
+  }
+  .listing-content {
+    font-size: 12px;
+    height: 150px;
+    overflow: auto;
+    background-color: #f4f4f4;
+    color: #3e3e3e;
+    padding: 10px;
+  } 
+  
+  #accordionExample  ,#accordionExample2  ,#accordionExample3 {
+   display: none  ;
+  }
+    #main-baslik{
+    display: none;
+  }
+  .sorted-content span{
+    display: none;
+  }
+  .sorted-content {
+   padding:  20px 0;
+   display: flex;
+  }
+  .dropdown-toggle{
+    border: 1px solid #3e3e3e;
+    background: white;
+    color: #3e3e3e;
+    margin-left: 20px;
+    font-size: 12px;
+    width: 150px;
+    border: none;
+  }
+  .dropdown-menu {
+    background-color: #f2f2f2;
+    border: none;
+}
+.filter-button-menu{
+  background: white;
+    color: #3e3e3e;
+    margin-left: 20px;
+    font-size: 12px;
+    width: 150px;
+    height: 32px;
+    border: none;
+    border-radius: 5px;  
+}
+.rightsidebar {
+  width: 0;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;/* Sağdan başlasın */
+  overflow-y: auto; /* Eğer menü yüksekse kaydırma çubuğu görünsün */
+  transition: right 0.3s ease-in-out;
+}
+
+.rightsidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.rightsidebar ul li {
+  padding: 10px;
+}
+
+.rightsidebar a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.rightContent {
+  flex: 1;
+
+}
+
+/* .filter-button-menu{
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+} */
+
+.rightsidebar.active {
+  width: 90%; /* Sağdan açılır */
+  transition: right 0.3s ease-out;
+}
+#close-right-sidebar{
+  display: none ;
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin: 20px 0;
+  .media {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .media-content {
+    padding: 0 40px;
+  }
+  .media-content a {
+    text-decoration: none;
+    color: #3e3e3e;
+  }
+}
+.media-content p {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.from {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.from button {
+  border: none;
+  width: 150px;
+  font-size: 12px;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--text-color-light);
+  margin-bottom: 100px;
+}
+
+
+
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px) {
+  .leftSidebar{
+    display: none;
+  }
+  #toggleLeftSidebar{
+    display: none;
+  }
+  .a-button-mobil{
+    display: none;
+  }
+  .filter-button-menu{
+    display: none;
+  }
+  .rightsidebar{
+    display: none;
+  }
+  #close-right-sidebar{
+    display: none;
+  }
+
 .header {
   height: 75px;
   width: 100%;
@@ -46,6 +356,7 @@ body {
   position: fixed;
   top: 0;
   background-color: #fff;
+  z-index: 999;
 }
 .header-brand {
 }
@@ -102,7 +413,7 @@ body {
   display: none;
   padding: 10px 140px;
   position: absolute; /* Yeni eklenen stil */
-  left: -511px;
+  left: -550px;
   top: 100%; /* Header'ın altında görünmesini sağlar */
   width: 100vw;
   height: 100px;
@@ -325,6 +636,22 @@ body {
   background-color: #f4f4f4;
   height: 50px;
   padding: 10px;
+  display: flex;
+  align-items: center;
+  .dropdown-toggle{
+    border: 1px solid #3e3e3e;
+    background: white;
+    color: #3e3e3e;
+    margin-left: 20px;
+    font-size: 12px;
+    width: 150px;
+  }
+  .dropdown-menu {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+
 }
 .main-content {
   display: flex;
@@ -348,6 +675,7 @@ body {
   font-size: 12px;
   margin-bottom: 0;
 }
+
 .from {
   display: flex;
   flex-direction: column;
@@ -405,21 +733,36 @@ body {
         
   }
   .comments {
-    width: 80%;
+    width: 90%;
     height: auto;
-    background-color: #3e3e3e;
+  
     margin: 0 auto;
     overflow: hidden;
     position: relative;
     .prev-btn{
         position: relative;
         top: 50%;
+        left: 0;
         z-index: 99;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        background: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        border-radius: 50%;
     }   
     .next-btn{
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        background: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        border-radius: 50%;
         position: relative;
         top: 50%;
-        left: 96%;
+        left: 95%;
         z-index: 99;
     }   
   
@@ -445,7 +788,63 @@ body {
     font-size: 12px;
   }
 }
-
+#comments2{
+  width: 100%;
+  padding: 50px 120px ;
+  background: #f0f0f0;
+  
+}
+#comments2 p{
+font-size: 12px;
+  
+}
+.footer{
+  padding: 50px 120px ; 
+  background-image: linear-gradient(123deg,#006fb2 33%,#01aedd 74%);
+  color: #fff;
+  height: auto;
+}
+.menufooter{
+  display: flex;
+}
+.menufooter ul {
+  list-style: none;
+}
+.menufooter ul li a {
+  text-decoration: none;
+  font-size: 12px ;
+  color: #f0f0f0;
+}
+.menufooter ul li {
+ line-height: 30px;
+}
+.item{
+  display: flex;
+  flex-direction: column;
+}
+.footer-head-six{
+  font-size: 16px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  text-align: center;
+  color: #f0f0f0;
+}
+.footer .socials i{
+  font-size: 36px;
+  color: #f0f0f0;
+}
+.footer-bottom{
+  width: 100%;
+  color: #f0f0f0;
+  font-size: 10px;
+  background-image: linear-gradient(123deg,#006fb2 33%,#01aedd 74%);
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom p{
+  color: #f0f0f0;
+}
 @keyframes slideDown {
   0% {
     transform: translateY(-100%); /* Menüyü yukarı taşıyın */
@@ -456,3 +855,6 @@ body {
     opacity: 1;
   }
 }
+}
+  
+
