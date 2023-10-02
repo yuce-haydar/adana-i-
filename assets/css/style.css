@@ -22,12 +22,7 @@ body,
   --font-size14: 14px;
   --font-size12: 12px;
 
-  --font-weight-400: 400;
-  --font-weight-500: 500;
-  --font-weight-600: 600;
-  --font-weight-700: 700;
-  --font-weight-800: 800;
-  --font-weight-900: 900;
+ 
 }
 body {
   width: 100%;
@@ -36,23 +31,27 @@ body {
   line-height: 1.5;
 }
 
-
-
 @media screen and (max-width: 991px) {
-  .header-nav{
+  /* #####HEADER KISMI */
+  .header-nav {
     display: none;
   }
-  .header{
+  .header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding: 20px 0;
+    justify-content: space-between;
+    padding: 15px;
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 990;
   }
-  .header-brand-mobil img{
-    width: 150px;
-    
+  .header-brand-mobil img {
+    width: 120px;
   }
-  .a-button-mobil{
+  .a-button-mobil {
     width: auto;
     padding: 5px;
     height: 20px;
@@ -66,8 +65,11 @@ body {
     background-color: var(--secondary-color);
     color: var(--text-color-light);
     text-decoration: none;
-  
   }
+    /* #####HEADER KISMI  SONU*/
+
+    
+
   .leftSidebar {
     width: 0;
     height: 100%;
@@ -78,58 +80,59 @@ body {
     left: 0;
     overflow-x: hidden;
     transition: width 0.3s ease-in-out;
+    z-index: 999;
   }
-  
+
+    /* ##### LEFT SİDEBAR ########## */
+
   .LeftSidebar ul {
     list-style-type: none;
     padding: 0;
   }
-  
+
   .leftSidebar ul li {
     padding: 10px;
   }
-  
+
   .leftSidebar a {
     text-decoration: none;
     color: #3e3e3e;
   }
-  
+
   .içerik {
-   
-   
     transition: margin-left 0.3s ease-in-out;
   }
-  
+
   #toggleLeftSidebar {
-  
     color: #fff;
     border: none;
     cursor: pointer;
-  
-  
+
     top: 20px;
     left: 20px;
   }
-  
+
   .leftSidebar.active {
     width: 90%;
   }
-  
+
   .content.active {
     margin-left: 90%;
   }
-  .close-sidebar{
+  .close-sidebar {
     position: relative;
-    top:-180px;
-    left: 300px;
+    top: -180px;
+    left: 250px;
   }
-  
+  /* #####LEFT SİDEBAR SONU */
+
+    /* #####BANNER KISMI */
+
   .banner {
     width: 100%;
     height: 205px;
     background-color: #1274b4;
     padding-left: 20px;
-   
   }
   .banner-nav {
   }
@@ -140,7 +143,7 @@ body {
   }
   .banner-content {
     color: #fff;
-   
+
     line-height: 30px;
   }
   .banner-content h1 {
@@ -167,8 +170,9 @@ body {
     vertical-align: middle;
     color: #f4f4f4;
   }
-  
-  
+  /* #####BANNER KISMI SONU */
+
+  /* #####CONTENT MAİN KISMI */
   .companyList {
     flex: 4;
   }
@@ -179,22 +183,24 @@ body {
     background-color: #f4f4f4;
     color: #3e3e3e;
     padding: 10px;
-  } 
-  
-  #accordionExample  ,#accordionExample2  ,#accordionExample3 {
-   display: none  ;
   }
-    #main-baslik{
+
+  #accordionExample,
+  #accordionExample2,
+  #accordionExample3 {
     display: none;
   }
-  .sorted-content span{
+  #main-baslik {
+    display: none;
+  }
+  .sorted-content span {
     display: none;
   }
   .sorted-content {
-   padding:  20px 0;
-   display: flex;
+    padding: 20px 0;
+    display: flex;
   }
-  .dropdown-toggle{
+  .dropdown-toggle {
     border: 1px solid #3e3e3e;
     background: white;
     color: #3e3e3e;
@@ -206,49 +212,51 @@ body {
   .dropdown-menu {
     background-color: #f2f2f2;
     border: none;
-}
-.filter-button-menu{
-  background: white;
+  }
+  .filter-button-menu {
+    background: white;
     color: #3e3e3e;
     margin-left: 20px;
     font-size: 12px;
-    width: 150px;
+    width: 120px;
     height: 32px;
     border: none;
-    border-radius: 5px;  
-}
-.rightsidebar {
-  width: 0;
-  height: 100%;
-  background-color: #333;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  right: 0;/* Sağdan başlasın */
-  overflow-y: auto; /* Eğer menü yüksekse kaydırma çubuğu görünsün */
-  transition: right 0.3s ease-in-out;
-}
+    border-radius: 5px;
+  }
+    /*RİGHT SİDEBAR KISMI */
 
-.rightsidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
+  .rightsidebar {
+    width: 0;
+    height: 100%;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0; /* Sağdan başlasın */
+    overflow-y: auto; /* Eğer menü yüksekse kaydırma çubuğu görünsün */
+    transition: right 0.3s ease-in-out;
+    z-index: 999;
+  }
 
-.rightsidebar ul li {
-  padding: 10px;
-}
+  .rightsidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
 
-.rightsidebar a {
-  text-decoration: none;
-  color: #fff;
-}
+  .rightsidebar ul li {
+    padding: 10px;
+  }
 
-.rightContent {
-  flex: 1;
+  .rightsidebar a {
+    text-decoration: none;
+    color: #fff;
+  }
 
-}
+  .rightContent {
+    flex: 1;
+  }
 
-/* .filter-button-menu{
+  /* .filter-button-menu{
   background-color: #333;
   color: #fff;
   border: none;
@@ -259,487 +267,122 @@ body {
   left: 20px;
 } */
 
-.rightsidebar.active {
-  width: 90%; /* Sağdan açılır */
-  transition: right 0.3s ease-out;
-}
-#close-right-sidebar{
-  display: none ;
-  position: absolute;
-  top:0;
-  left: 0;
-}
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: auto;
-  margin: 20px 0;
-  .media {
+  .rightsidebar.active {
+    width: 90%; /* Sağdan açılır */
+    transition: right 0.3s ease-out;
+  }
+  #close-right-sidebar {
+    width: auto;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    z-index: 999;
+  }
+    /* CLİNİCS SECTİON */
+
+  .main-content {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    height: auto;
     margin: 20px 0;
+    .media {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0;
+    }
+    .media-content {
+      padding: 0 40px;
+    }
+    .media-content a {
+      text-decoration: none;
+      color: #3e3e3e;
+    }
   }
-  .media-content {
-    padding: 0 40px;
-  }
-  .media-content a {
-    text-decoration: none;
-    color: #3e3e3e;
-  }
-}
-.media-content p {
-  font-size: 12px;
-  margin-bottom: 0;
-}
-
-.from {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-}
-.from button {
-  border: none;
-  width: 150px;
-  font-size: 12px;
-  border-radius: 25px;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  background-color: var(--secondary-color);
-  color: var(--text-color-light);
-  margin-bottom: 100px;
-}
-
-
-
-  
-}
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:992px) {
-  .leftSidebar{
-    display: none;
-  }
-  #toggleLeftSidebar{
-    display: none;
-  }
-  .a-button-mobil{
-    display: none;
-  }
-  .filter-button-menu{
-    display: none;
-  }
-  .rightsidebar{
-    display: none;
-  }
-  #close-right-sidebar{
-    display: none;
-  }
-
-.header {
-  height: 75px;
-  width: 100%;
-  padding: 0 130px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  background-color: #fff;
-  z-index: 999;
-}
-.header-brand {
-}
-.header-nav {
-  position: relative;
-}
-.header-nav ul {
-  font-size: var(--font-size14);
-  list-style: none;
-  gap: 25px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.header-nav a {
-  font-weight: 400;
-  text-decoration: none;
-  color: var(--primary-color);
-}
-.after-icon::after {
-  content: ""; /* Aşağı ok karakteri */
-  background-image: url("../images/icons/down-arrow\(1\).png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 16px;
-  height: 16px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.after-icon-select::after {
-  content: ""; /* Aşağı ok karakteri */
-  background-image: url("../images/icons/down-arrow\(1\).png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  vertical-align: middle;
-}
-.a-button {
-  width: 183px;
-  height: 40px;
-  border-radius: 25px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--secondary-color);
-  color: var(--text-color-light);
-}
-.about-dropdown {
-  display: none;
-  padding: 10px 140px;
-  position: absolute; /* Yeni eklenen stil */
-  left: -550px;
-  top: 100%; /* Header'ın altında görünmesini sağlar */
-  width: 100vw;
-  height: 100px;
-  background-color: #fff;
-  z-index: 1; /* Diğer içeriklerin üzerine çıkmasını sağlar */
-  /* animation: slideDown 0.5s ease-in-out forwards; / */
-  transform-origin: top; /* Animasyonun yukarıdan başlamasını sağlar */
-  transform: scaleY(0); /* Başlangıçta menüyü sıfır yükseklikte yapar */
-  transition: transform 0.3s ease-in-out; /* Animasyon süresi ve efekti */
-}
-.about-dropdown ul {
-  position: relative;
-  top: 10px;
-}
-.header-nav ul:hover .about-dropdown {
-  display: block;
-}
-.about-dropdown.active {
-  display: block; /* Tıklanınca görünür */
-  transform: scaleY(1);
-}
-.select-language {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 30px;
-  border-radius: 15px;
-  background-color: #fff;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-  text-align: center;
-  /* line-height: 40px; */
-  cursor: pointer;
-}
-.select-language img {
-  width: 18px;
-  height: 18px;
-  position: relative;
-  top: 5px;
-}
-.select-language-img {
-  width: 18px;
-  height: 18px;
-  position: relative;
-  top: 5px;
-}
-.drop-down-language {
-  display: none;
-  position: absolute;
-  width: 130px;
-  height: auto;
-  background-color: var(--text-color-light);
-  border-radius: 5px;
-  padding: 10px 20px;
-  top: 38px;
-  z-index: 11;
-}
-.drop-down-language.active {
-  display: block;
-}
-.drop-down-currency {
-  background-color: #fff;
-  border: 2px solid #3e3e3e43;
-  display: none;
-  position: absolute;
-  width: 100px;
-  height: auto;
-  border-radius: 5px;
-
-  top: 38px;
-  z-index: 11;
-}
-.drop-down-currency-content a {
-  display: inline-block;
-  padding: 10px 20px;
-  color: #3e3e3e;
-}
-.drop-down-currency-content :hover {
-  display: block;
-  width: 100%;
-  background-color: #3e3e3e43;
-}
-.drop-down-currency.active {
-  display: block;
-}
-.select-currency {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 30px;
-  font-size: 12px;
-  padding-top: 5px;
-  border-radius: 15px;
-  background-color: #fff;
-  border: 1px solid var(--primary-color);
-  color: var(--primary-color);
-  text-align: center;
-  /* line-height: 40px; */
-  cursor: pointer;
-}
-
-/* Banner*/
-.banner {
-  width: 100%;
-  height: 235px;
-  background-color: #1274b4;
-  padding-left: 120px;
-  margin-top: 75px;
-}
-.banner-nav {
-}
-.banner-nav a {
-  font-size: 11px;
-  color: var(--text-color-light);
-  text-decoration: none;
-}
-.banner-content {
-  color: #fff;
-  padding-top: 20px;
-  line-height: 30px;
-}
-.banner-content h1 {
-  margin-top: 30px;
-  margin-bottom: 20px;
-  font-size: 36px;
-  font-weight: 700;
-}
-.banner-ul {
-  display: flex;
-  list-style: none;
-}
-.banner-li {
-  text-decoration: none;
-  font-weight: 300;
-  font-size: 14px;
-}
-.banner-li img {
-  vertical-align: middle;
-  margin-left: 10px;
-}
-.banner-content span {
-  vertical-align: middle;
-  color: #f4f4f4;
-}
-/* #endbanner */
-/* #content kısmı */
-#content {
-  /* height: auto; */
-  display: flex; /* İçerikleri yatay olarak düzenle */
-  padding: 0 120px;
-  margin-top: 50px;
-}
-
-.left-content {
-  flex: 1; /* Sol içerik alanına eşit genişlik ver */
-  background-color: #f2f2f2; /* Arka plan rengi, istediğiniz rengi ayarlayabilirsiniz */
-  padding: 20px; /* İçerik etrafına boşluk ekleyin */
-  background: #00000000;
-  /* height: 100vh; */
-}
-
-.left-content {
-  .filtered-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  .filtered-li {
-    list-style: none;
+  .media-content p {
     font-size: 12px;
-  }
-  .filtered-li a {
-    text-decoration: none;
-    color: #3e3e3e;
-  }
-  .filtered-li span {
-    display: flex;
-    position: relative;
-    top: -20px;
-    justify-content: flex-end;
+    margin-bottom: 0;
   }
 
-  .accordion-item {
-    border: none;
+  .from {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
   }
-  .accordion-body {
+  .from p {
+    offset: 1;
+  }
+  .from h3 {
+  }
+  .from a {
+    offset: 3;
+  }
+  .from img {
+    offset: 4;
+  }
+
+  .from button {
+    offset: 5;
+    border: none;
+    width: 80%;
+    font-size: 12px;
+    border-radius: 25px;
+    text-decoration: none;
     padding: 10px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
   }
-  .filtered-li::before {
-    content: "";
-    width: 15px;
-    vertical-align: middle;
-    height: 15px;
-    border: solid 1px #bcbcbc;
-    border-radius: 10px;
-    display: inline-block;
-    margin-right: 7px;
-    list-style: none;
-  }
-  .accordion-button::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
-  }
-  .accordion-button:not(.collapsed)::after {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
-  }
-}
+    /* #####PAGİNATİON KISMI */
 
-.companyList {
-  flex: 4;
-}
-.listing-content {
-  font-size: 12px;
-  height: 150px;
-  overflow: auto;
-  background-color: #f4f4f4;
-  color: #3e3e3e;
-  padding: 10px;
-}
-.sorted-content {
-  background-color: #f4f4f4;
-  height: 50px;
-  padding: 10px;
-  display: flex;
-  align-items: center;
-  .dropdown-toggle{
-    border: 1px solid #3e3e3e;
-    background: white;
-    color: #3e3e3e;
-    margin-left: 20px;
-    font-size: 12px;
-    width: 150px;
-  }
-  .dropdown-menu {
-    background-color: #f2f2f2;
-    border: none;
-}
-
-
-}
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: auto;
-  margin: 20px 0;
-  .media {
+  #pagination {
+    height: 80vh;
+    flex-direction: column;
     display: flex;
-    margin: 20px 0;
-  }
-  .media-content {
-    padding: 0 40px;
-  }
-  .media-content a {
-    text-decoration: none;
-    color: #3e3e3e;
-  }
-}
-.media-content p {
-  font-size: 12px;
-  margin-bottom: 0;
-}
-
-.from {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-}
-.from button {
-  border: none;
-  width: 150px;
-  font-size: 12px;
-  border-radius: 25px;
-  text-decoration: none;
-  padding: 10px;
-  text-align: center;
-  background-color: var(--secondary-color);
-  color: var(--text-color-light);
-  margin-bottom: 100px;
-}
-
-/* pagination*/
-#pagination {
-  height: 80vh;
-  flex-direction: column;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-top: 20px;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
     font-size: 12px;
     .progress-container {
-        height: 5px;
-        width: 200px;
-        background-color: #ddd;
-        border-radius: 4px;
-        overflow: hidden;
-    
+      height: 5px;
+      width: 200px;
+      background-color: #ddd;
+      border-radius: 4px;
+      overflow: hidden;
     }
     .progress-bar {
-        width: 0;
-        height: 20px;
-        background-color: #007BFF;
-        transition: width 0.3s ease-in-out;
+      width: 0;
+      height: 20px;
+      background-color: #007bff;
+      transition: width 0.3s ease-in-out;
     }
     .loadmore-btn {
-        border: 1px solid var(--text-color-dark);
-        width: 250px;
-        font-size: 14px;
-        border-radius: 25px;
-        text-decoration: none;
-        padding: 10px;
-        text-align: center;
-        background-color:transparent;
-        color: var(--text-color-dark);
-        margin: 10px;
-        
-  }
-  .comments {
-    width: 90%;
-    height: auto;
-  
-    margin: 0 auto;
-    overflow: hidden;
-    position: relative;
-    .prev-btn{
+      border: 1px solid var(--text-color-dark);
+      width: 250px;
+      font-size: 14px;
+      border-radius: 25px;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+      background-color: transparent;
+      color: var(--text-color-dark);
+      margin: 10px;
+    }
+      /*COMMENT KISMI */
+
+    .comments {
+      width: 90%;
+      height: auto;
+
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      .prev-btn {
         position: relative;
         top: 50%;
         left: 0;
@@ -751,8 +394,609 @@ body {
         border: 1px solid var(--primary-color);
         color: var(--primary-color);
         border-radius: 50%;
-    }   
-    .next-btn{
+      }
+      .next-btn {
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        background: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        border-radius: 50%;
+        position: relative;
+        top: 50%;
+        left: 80%;
+        z-index: 500;
+      }
+    }
+  /*SLİDER*/
+
+    .slider {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+    }
+
+    .testimonial {
+      background-color: #f0f0f0;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+    .testimonial p {
+      font-size: 12px;
+    }
+  }
+    /*COMMENTS 2 */
+
+  #comments2 {
+    width: 100%;
+    padding: 40px;
+    background: #f0f0f0;
+  }
+  #comments2 p {
+    font-size: 10px;
+  }
+  #comments2 h3 {
+    font-size: 16px;
+  }
+
+    /* #####FOOTER KISMI */
+
+  .footer {
+    padding: 10px;
+    background-image: linear-gradient(123deg, #006fb2 33%, #01aedd 74%);
+    color: #fff;
+    height: auto;
+  }
+  .menufooter {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .menufooter ul {
+    list-style: none;
+  }
+  .menufooter ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #f0f0f0;
+  }
+  .menufooter ul li {
+    line-height: 30px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-head-six {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    color: #f0f0f0;
+  }
+  .footer .socials i {
+    font-size: 36px;
+    color: #f0f0f0;
+  }
+  .footer-bottom {
+    width: 100%;
+    color: #f0f0f0;
+    font-size: 10px;
+    background-image: linear-gradient(123deg, #006fb2 33%, #01aedd 74%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-bottom p {
+    color: #f0f0f0;
+  }
+  .fixed-footer p{
+    color: var(--primary-color);
+    margin: 0 20px;
+  }
+  .fixed-footer {
+    padding: 0 130px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sağ-kısım {
+      align-items: center;
+      display: flex;
+      justify-content: end;
+    }
+    .sağ-kısım p {
+      margin: 0 20px;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+    .sağ-kısım button {
+      width: 250px;
+      height: 45px;
+      border-radius: 46px;
+      background-color: #ffd068;
+      font-size: 15px;
+      text-align: center;
+      color: #505050;
+      border-radius: 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+    /* MOBİL İÇİN KALDIRILAN YERLER*/
+
+  .leftSidebar {
+    display: none;
+  }
+  #toggleLeftSidebar {
+    display: none;
+  }
+  .a-button-mobil {
+    display: none;
+  }
+  .filter-button-menu {
+    display: none;
+  }
+  .rightsidebar {
+    display: none;
+  }
+  #close-right-sidebar {
+    display: none;
+  }
+
+
+  /* #####HEADER KISMI -> NAV*/
+  .header {
+    height: 75px;
+    width: 100%;
+    padding: 0 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 990;
+  }
+  .header-brand {
+  }
+  .header-nav {
+    position: relative;
+  }
+  .header-nav ul {
+    font-size: var(--font-size14);
+    list-style: none;
+    gap: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .header-nav a {
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+  .after-icon::after {
+    content: ""; /* Aşağı ok karakteri */
+    background-image: url("../images/icons/down-arrow\(1\).png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .after-icon-select::after {
+    content: ""; /* Aşağı ok karakteri */
+    background-image: url("../images/icons/down-arrow\(1\).png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .a-button {
+    width: 183px;
+    height: 40px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+  }
+  .about-dropdown {
+    display: none;
+    padding: 10px 140px;
+    position: absolute; /* Yeni eklenen stil */
+    left: -550px;
+    top: 100%; /* Header'ın altında görünmesini sağlar */
+    width: 100vw;
+    height: 100px;
+    background-color: #fff;
+    z-index: 1; /* Diğer içeriklerin üzerine çıkmasını sağlar */
+    /* animation: slideDown 0.5s ease-in-out forwards; / */
+    transform-origin: top; /* Animasyonun yukarıdan başlamasını sağlar */
+    transform: scaleY(0); /* Başlangıçta menüyü sıfır yükseklikte yapar */
+    transition: transform 0.3s ease-in-out; /* Animasyon süresi ve efekti */
+  }
+  .about-dropdown ul {
+    position: relative;
+    top: 10px;
+  }
+  .header-nav ul:hover .about-dropdown {
+    display: block;
+  }
+  .about-dropdown.active {
+    display: block; /* Tıklanınca görünür */
+    transform: scaleY(1);
+  }
+  .select-language {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    text-align: center;
+    /* line-height: 40px; */
+    cursor: pointer;
+  }
+  .select-language img {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+  }
+  .select-language-img {
+    vertical-align: revert;
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+  }
+  .drop-down-language {
+    display: none;
+    position: absolute;
+    width: 130px;
+    height: auto;
+    border-radius: 5px;
+    background-color: #FFF;
+    padding: 10px 20px;
+    top: 38px;
+    z-index: 11;
+  }
+  .drop-down-language .item-language  {
+    display: inline-block;
+    color: #3e3e3e;
+    padding: 15px 0;
+    
+  }
+  .drop-down-language .item-language a  {
+    color: var(--text-color-dark);
+
+    
+  }
+
+  .drop-down-language .item-language:hover {
+    display: block;
+    width: 100%;
+    background-color: #3e3e3e43;
+  }
+  .drop-down-language.active {
+    display: block;
+  }
+  .drop-down-currency {
+    background-color: #fff;
+    border: 2px solid #3e3e3e43;
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+
+    top: 38px;
+    z-index: 11;
+  }
+  .drop-down-currency-content a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #3e3e3e;
+  }
+  .drop-down-currency-content :hover {
+    display: block;
+    width: 100%;
+    background-color: #3e3e3e43;
+  }
+  .drop-down-currency.active {
+    display: block;
+  }
+  .select-currency {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    font-size: 12px;
+    padding-top: 5px;
+    border-radius: 15px;
+    background-color: #fff;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    text-align: center;
+    /* line-height: 40px; */
+    cursor: pointer;
+  }
+
+  /* Banner*/
+  .banner {
+    width: 100%;
+    height: 235px;
+    background-image: url("/assets/images/bgi.png");
+    padding-left: 120px;
+    margin-top: 75px;
+  }
+  .banner::before {
+    /* Overlay için pseudo-element oluşturuyoruz */
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: url(/Web/images/bg/flymedi-banner.webp) no-repeat top;
+    background-size: cover !important;
+    z-index: -1;
+  }
+
+  .banner-nav a {
+    font-size: 11px;
+    color: var(--text-color-light);
+    text-decoration: none;
+  }
+  .banner-content {
+    color: #fff;
+    padding-top: 20px;
+    line-height: 30px;
+  }
+  .banner-content h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .banner-ul {
+    display: flex;
+    list-style: none;
+  }
+  .banner-li {
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  .banner-li img {
+    vertical-align: middle;
+    margin-left: 10px;
+  }
+  .banner-content span {
+    vertical-align: middle;
+    color: #f4f4f4;
+  }
+  /* #endbanner */
+  /* #content kısmı */
+  #content {
+    /* height: auto; */
+    display: flex; /* İçerikleri yatay olarak düzenle */
+    padding: 0 120px;
+    margin-top: 50px;
+  }
+
+  /* #####LEFT CONTENT */
+  .left-content {
+    flex: 1; /* Sol içerik alanına eşit genişlik ver */
+    background-color: #f2f2f2; /* Arka plan rengi, istediğiniz rengi ayarlayabilirsiniz */
+    padding: 20px; /* İçerik etrafına boşluk ekleyin */
+    background: #00000000;
+    /* height: 100vh; */
+  }
+  .left-content {
+    .filtered-ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .filtered-li {
+      list-style: none;
+      font-size: 12px;
+    }
+    .filtered-li a {
+      text-decoration: none;
+      color: #3e3e3e;
+    }
+    .filtered-li span {
+      display: flex;
+      position: relative;
+      top: -20px;
+      justify-content: flex-end;
+    }
+
+    .accordion-item {
+      border: none;
+    }
+    .accordion-body {
+      padding: 10px;
+    }
+    .filtered-li::before {
+      content: "";
+      width: 15px;
+      vertical-align: middle;
+      height: 15px;
+      border: solid 1px #bcbcbc;
+      border-radius: 10px;
+      display: inline-block;
+      margin-right: 7px;
+      list-style: none;
+    }
+    .accordion-button::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+    }
+    .accordion-button:not(.collapsed)::after {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+    }
+  }
+
+  .companyList {
+    flex: 4;
+  }
+  .listing-content {
+    font-size: 12px;
+    height: 150px;
+    overflow: auto;
+    background-color: #f4f4f4;
+    color: #3e3e3e;
+    padding: 10px;
+  }
+  .sorted-content {
+    background-color: #f4f4f4;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    .dropdown-toggle {
+      border: 1px solid #3e3e3e;
+      background: white;
+      color: #3e3e3e;
+      margin-left: 20px;
+      font-size: 12px;
+      width: 150px;
+    }
+    .dropdown-menu {
+      background-color: #f2f2f2;
+      border: none;
+    }
+  }
+  /* CLİNİC LİSTS */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    margin: 20px 0;
+    .media {
+      display: flex;
+      margin: 20px 0;
+    }
+    .media-content {
+      padding: 0 40px;
+    }
+    .media-content a {
+      text-decoration: none;
+      color: #3e3e3e;
+    }
+  }
+  .media-content p {
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+
+  .from {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .from button {
+    border: none;
+    width: 150px;
+    font-size: 12px;
+    border-radius: 25px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    margin-bottom: 100px;
+  }
+
+  /* #####pagination*/
+  #pagination {
+    height: 80vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 12px;
+    .progress-container {
+      height: 5px;
+      width: 200px;
+      background-color: #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .progress-bar {
+      width: 0;
+      height: 20px;
+      background-color: #007bff;
+      transition: width 0.3s ease-in-out;
+    }
+    .loadmore-btn {
+      border: 1px solid var(--text-color-dark);
+      width: 250px;
+      font-size: 14px;
+      border-radius: 25px;
+      text-decoration: none;
+      padding: 10px;
+      text-align: center;
+      background-color: transparent;
+      color: var(--text-color-dark);
+      margin: 10px;
+    }
+    /* COMMENTS*/
+    .comments {
+      width: 90%;
+      height: auto;
+
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+      .prev-btn {
+        position: relative;
+        top: 50%;
+        left: 0;
+        z-index: 99;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        background: transparent;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        border-radius: 50%;
+      }
+      .next-btn {
         width: 30px;
         height: 30px;
         font-size: 16px;
@@ -764,97 +1008,137 @@ body {
         top: 50%;
         left: 95%;
         z-index: 99;
-    }   
-  
+      }
+    }
+    /* COMMENT SONU*/
+    .slider {
+      display: flex;
+      width: 100%;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slide {
+      flex: 0 0 25%;
+    }
+
+    .testimonial {
+      background-color: #f0f0f0;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+    }
+    .testimonial p {
+      font-size: 12px;
+    }
   }
-  
-  .slider {
-    display: flex;
+
+/* #####PAGİNATİON SONU */
+  #comments2 {
     width: 100%;
-    transition: transform 0.5s ease-in-out;
+    padding: 50px 120px;
+    background: #f0f0f0;
   }
-  
-  .slide {
-    flex: 0 0 25%;
-  }
-  
-  .testimonial {
-    background-color: #f0f0f0;
-    padding: 20px;
-    margin: 10px;
-    text-align: center;
-  }
-  .testimonial p {
+  #comments2 p {
     font-size: 12px;
   }
-}
-#comments2{
-  width: 100%;
-  padding: 50px 120px ;
-  background: #f0f0f0;
-  
-}
-#comments2 p{
-font-size: 12px;
-  
-}
-.footer{
-  padding: 50px 120px ; 
-  background-image: linear-gradient(123deg,#006fb2 33%,#01aedd 74%);
-  color: #fff;
-  height: auto;
-}
-.menufooter{
-  display: flex;
-}
-.menufooter ul {
-  list-style: none;
-}
-.menufooter ul li a {
-  text-decoration: none;
-  font-size: 12px ;
-  color: #f0f0f0;
-}
-.menufooter ul li {
- line-height: 30px;
-}
-.item{
-  display: flex;
-  flex-direction: column;
-}
-.footer-head-six{
-  font-size: 16px;
-  margin-left: 30px;
-  margin-bottom: 30px;
-  display: flex;
-  text-align: center;
-  color: #f0f0f0;
-}
-.footer .socials i{
-  font-size: 36px;
-  color: #f0f0f0;
-}
-.footer-bottom{
-  width: 100%;
-  color: #f0f0f0;
-  font-size: 10px;
-  background-image: linear-gradient(123deg,#006fb2 33%,#01aedd 74%);
-  display: flex;
-  justify-content: space-between;
-}
-.footer-bottom p{
-  color: #f0f0f0;
-}
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%); /* Menüyü yukarı taşıyın */
-    opacity: 0;
+  /* ##### FOOTER KISMI*/
+  .footer {
+    padding: 50px 120px;
+    background-image: linear-gradient(123deg, #006fb2 33%, #01aedd 74%);
+    color: #fff;
+    height: auto;
   }
-  100% {
-    transform: translateY(0); /* Menüyü normal konumuna getirin */
-    opacity: 1;
+  .menufooter {
+    display: flex;
   }
-}
-}
-  
+  .menufooter ul {
+    list-style: none;
+  }
+  .menufooter ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #f0f0f0;
+  }
+  .menufooter ul li {
+    line-height: 30px;
+  }
+  .item {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-head-six {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    text-align: center;
+    color: #f0f0f0;
+  }
+  .footer .socials i {
+    font-size: 36px;
+    color: #f0f0f0;
+  }
+  .footer-bottom {
+    width: 100%;
+    color: #f0f0f0;
+    font-size: 10px;
+    background-image: linear-gradient(123deg, #006fb2 33%, #01aedd 74%);
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-bottom p {
+    color: #f0f0f0;
+  }
+  .fixed-footer p{
+    color: var(--primary-color);
+    margin: 0 20px;
+  }
+  .fixed-footer {
+    padding: 0 130px;
+    height: 70px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
+    .sağ-kısım {
+      align-items: center;
+      display: flex;
+      justify-content: end;
+    }
+    .sağ-kısım p {
+      margin: 0 20px;
+      color: var(--primary-color);
+      font-weight: 600;
+    }
+    .sağ-kısım button {
+      width: 250px;
+      height: 45px;
+      border-radius: 46px;
+      background-color: #ffd068;
+      font-size: 15px;
+      text-align: center;
+      color: #505050;
+      border-radius: 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%); /* Menüyü yukarı taşıyın */
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0); /* Menüyü normal konumuna getirin */
+      opacity: 1;
+    }
+  }
+}
+
+/* #endcontent */
